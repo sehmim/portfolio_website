@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import AllProjects from './pages/AllProjects';
 import AllJobs from "./pages/AllJobs";
 import Experience from "./pages/Experience";
+import Blogs from './pages/Blogs';
+import Band from './pages/Band';
 function RouteController() {
   return (
     <Router>
@@ -25,6 +27,8 @@ function App() {
       <LandingPage />
       <Experience />
       <Projects />
+      <Blogs></Blogs>
+      <Band></Band>
     </div>
   );
 }

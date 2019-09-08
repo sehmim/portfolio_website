@@ -16,16 +16,11 @@ export default class LandingPage extends Component {
         return (
             <div className="landing-page-body" >
                 <div className="main-material-body" >
-                    {/* <Typography align="center" variant="h2" component="p"> Sehmim Al </Typography>
-                    <img className="image-my-face" src={MYFACE}></img>
-                    <h1 className="title-sub" > Please Have a Look Around</h1>
+                    {/* <Typography style={{ margin: '20px' }} align="center" variant="h3" component="p"> Sehmim Al </Typography> */}
+                    {/* <img className="image-my-face" src={MYFACE}></img> */}
                     <ul className="item-list">
-                        <li className="item-each">
-                            <a>
-                                <img></img>
-                            </a>
-                        </li>
-                    </ul> */}
+
+                    </ul>
                 </div>
             </div>
         )
