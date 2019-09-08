@@ -14,7 +14,7 @@ import { Box, Button } from '@material-ui/core';
 import '../styles/choices.sass'
 
 // Utils
-import { Websites, Mobile, OpenSource } from "../utils/ProjectsData";
+import { Websites, Mobile, OpenSource, Others } from "../utils/ProjectsData";
 
 
 function TabContainer(props) {
@@ -119,9 +119,6 @@ export default function FloatingActionButtonZoom() {
                             })
                         }
                     </Box>
-                    <Box p={0.0} m={0.0} display="flex" justifyContent="flex-end">
-                        <Button variant="outlined" href="/projects"> See More...</Button>
-                    </Box>
                 </TabContainer>
                 {/* -------- Mobile ------- */}
                 <TabContainer className={classes.tabContainer} dir={theme.direction}>
@@ -140,6 +137,18 @@ export default function FloatingActionButtonZoom() {
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
                         {
                             OpenSource.map((item, index) => {
+                                return (
+                                    <ProgramEach title={item.title} img={item.img} techStackImg={item.techStackImg} description1={item.description} description2={item.description2} githubLink={item.githubLink} liveDemoLink={item.liveDemoLink} skipLiveDemo={item.skipLiveDemo} />
+                                )
+                            })
+                        }
+                    </Box>
+                </TabContainer>
+                {/* -------- Others ------- */}
+                <TabContainer className={classes.tabContainer} dir={theme.direction}>
+                    <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
+                        {
+                            Others.map((item, index) => {
                                 return (
                                     <ProgramEach title={item.title} img={item.img} techStackImg={item.techStackImg} description1={item.description} description2={item.description2} githubLink={item.githubLink} liveDemoLink={item.liveDemoLink} skipLiveDemo={item.skipLiveDemo} />
                                 )

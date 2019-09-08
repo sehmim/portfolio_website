@@ -47,11 +47,12 @@ const Mobile = [
         title: 'Manga Reader App',
         img: require('../assets/techStackImgs/flutter-logo.png'),
         techStackImg: [
-            require('../assets/techStackImgs/flutter-logo.png')
+            require('../assets/techStackImgs/flutter-logo.png'),
+            require('../assets/techStackImgs/dart.jpg'),
         ],
         description: "Colab Product W @isaacpopoola. You can view latest mangas and comics",
         description2: "The Purpose of this website is to advertise Scotiabank's new career opportunities for students and fresh grads. This page mainly highlights Scotiabanks values, On going programs and internship opportunists for students as well as ways to get in touch with recruiters and network. The content of this website are dynamically managed through JSON files.",
-        githubLink: 'https://github.com/sehmim2/scotia-student-page',
+        githubLink: 'https://github.com/sehmim2/manga-reader-app',
         liveDemoLink: '',
         skipLiveDemo: true
     },
@@ -60,10 +61,11 @@ const Mobile = [
         img: require('../assets/techStackImgs/android.png'),
         techStackImg: [
             require('../assets/techStackImgs/android.png'),
+            require('../assets/techStackImgs/java.png'),
         ],
         description: "Demonstrates Object Oriented Programming using Bank Transaction",
         description2: "",
-        githubLink: 'https://github.com/sehmim2/scotia-student-page',
+        githubLink: 'https://github.com/sehmim/android-bankapp',
         liveDemoLink: '',
         skipLiveDemo: true
     },
@@ -85,6 +87,7 @@ const OpenSource = [
         skipLiveDemo: false
     }
 ]
+const Others = [
+]
 
-
-export { Websites, Mobile, OpenSource }
+export { Websites, Mobile, OpenSource, Others }

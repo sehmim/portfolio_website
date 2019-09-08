@@ -5,7 +5,7 @@ import Projects from "./pages/Projects";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import AllProjects from './pages/AllProjects';
 import AllJobs from "./pages/AllJobs";
-
+import Experience from "./pages/Experience";
 function RouteController() {
   return (
     <Router>
@@ -24,6 +24,7 @@ function App() {
     <div className="App">
       <LandingPage />
       <Projects />
+      <Experience />
     </div>
   );
 }
