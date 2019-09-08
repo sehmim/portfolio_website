@@ -8,6 +8,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Box } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import { Jobs } from "../utils/Jobs";
+
+import "../styles/xp.sass";
+
 const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
@@ -24,13 +27,18 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.text.secondary,
     },
     img: {
-        width: '215px',
-        height: '50px',
+        width: '190px',
+        height: '30px',
         padding: '15px',
     },
     btn: {
         border: '1px solid grey',
     },
+    imgStack: {
+        width: '70px',
+        height: '70px',
+        margin: '20px'
+    }
 }));
 
 
@@ -52,16 +60,18 @@ export default function ControlledExpansionPanels() {
                     return (
                         <ExpansionPanel expanded={expanded === 'panel' + index} onChange={handleChange('panel' + index)}>
                             <ExpansionPanelSummary
+                                style={{ justifyContent: 'center' }}
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1bh-content"
                                 id="panel1bh-header"
                             >
-                                <Box  >
-                                    <img className={classes.img} src={item.img}></img>
+                                <Box alignContent="center" >
                                     <Typography variant="h3" component="h3" >
                                         {item.title}
                                     </Typography>
                                     <Typography style={{ padding: 10 }} variant="body1" component="h3">{item.date}</Typography>
+                                    <img className={classes.img} src={item.img}></img>
+
                                 </Box>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
@@ -79,7 +89,19 @@ export default function ControlledExpansionPanels() {
                                             </li>
                                         </ul>
                                     </Box>
+                                    <Typography variant="h5" component="h3" >Tech Stack</Typography>
+                                    <Box my={4} flexDirection="row" >
+                                        {
+                                            item.techStack.map((element) => {
+                                                return (
+                                                    <img className={classes.imgStack} src={element}></img>
+                                                )
+                                            })
+                                        }
+                                    </Box>
                                 </Box>
+                                {
+                                }
 
                             </ExpansionPanelDetails>
                         </ExpansionPanel>
@@ -87,6 +109,6 @@ export default function ControlledExpansionPanels() {
 
                 })
             }
-        </div>
+        </div >
     );
 }

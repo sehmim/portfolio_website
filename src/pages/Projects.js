@@ -14,6 +14,9 @@ export default class Program extends Component {
                     <Typography align="center" variant="h2" component="h1"> Projects </Typography>
                 </Box>
                 <hr></hr>
+                <br></br>
+                <br></br>
+                <br></br>
                 <Box mt={6} display="flex" justifyContent="space-around" flexWrap="wrap" >
                     <Choices />
                 </Box>
