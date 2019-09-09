@@ -3,34 +3,6 @@ import { Box, Typography } from '@material-ui/core'
 
 import Gallery from 'react-grid-gallery';
 
-import YouTube from 'react-youtube';
-
-class MyYouTube extends React.Component {
-    render() {
-        const opts = {
-            height: '810',
-            width: '1140',
-
-        };
-
-        return (
-            <div >
-                <YouTube
-                    videoId="gqNiIcwv1q0"
-                    opts={opts}
-                    onReady={this._onReady}
-                />
-            </div>
-        );
-    }
-
-    _onReady(event) {
-        // access to player in all event handlers via event.target
-        event.target.pauseVideo();
-    }
-}
-
-
 const IMAGES =
     [{
         src: "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/67689549_2214658578826165_2332131090988269568_o.jpg?_nc_cat=102&_nc_oc=AQnUUcVgWM2lMVNzevzTxzg8gkgNwBXMHpFTjEttD9Z2S-vo2JnHkOy4qROWDv1YDFU&_nc_ht=scontent-lax3-1.xx&oh=c0d74e298e6df978d196047221cb1bce&oe=5DF91CC5",
@@ -73,12 +45,6 @@ const IMAGES =
         thumbnailHeight: 412
     },
     {
-        src: "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/45487215_2044534045838620_1960330113069350912_o.jpg?_nc_cat=105&_nc_oc=AQl9i5diEsz-vng73OMUUQ8dATBw-xtlVbWtlKa-zaB_2ceD9GRIC4TYe573dCK0HIo&_nc_ht=scontent-lax3-1.xx&oh=02cb06a5108ab8f85b823212d1861dd3&oe=5DF87773",
-        thumbnail: "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/45487215_2044534045838620_1960330113069350912_o.jpg?_nc_cat=105&_nc_oc=AQl9i5diEsz-vng73OMUUQ8dATBw-xtlVbWtlKa-zaB_2ceD9GRIC4TYe573dCK0HIo&_nc_ht=scontent-lax3-1.xx&oh=02cb06a5108ab8f85b823212d1861dd3&oe=5DF87773",
-        thumbnailWidth: 520,
-        thumbnailHeight: 212
-    },
-    {
         src: "",
         thumbnail: "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/31500033_1911484422476917_7331522003339313152_n.jpg?_nc_cat=100&_nc_oc=AQmstwrevGWRxykvvgX9XtxW1oF3TFwv4ZCJ9GuMJRZmc6BpS-lJ_eygIQAZyv5OzOg&_nc_ht=scontent-lax3-1.xx&oh=cddea28c0df88a3ccc3c77e8e20bd9bb&oe=5E032C3D",
         thumbnailWidth: 520,
@@ -93,10 +59,10 @@ const IMAGES =
     }
     ]
 
-
-
-
-
+const BandMediaStyle = {
+    width: '70px',
+    margin: '10px'
+}
 export default class Band extends Component {
     render() {
         return (
@@ -109,9 +75,18 @@ export default class Band extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
+                <div>
+                    <a href="https://open.spotify.com/artist/60B9wYkI4NbDtugCZIAsIq?si=PeFEDJ3gR0GNtjzViYSzUg">
+                        <img style={BandMediaStyle} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK41BxyAlLjX0LJEkDQVEo4ghQHXsgOjdF-Zvd8m4amYMutL5I" ></img>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=gqNiIcwv1q0">
+                        <img style={BandMediaStyle} src="https://yt3.ggpht.com/a/AGF-l793fCxNfPkE3cl5fL8Ozle6gFt4-CReh_0-0Q=s900-c-k-c0xffffffff-no-rj-mo" ></img>
+                    </a>
+                    <a href="https://spectralights.bandcamp.com/album/orbit">
+                        <img style={BandMediaStyle} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandcamp-button-bc-circle-black.svg/1024px-Bandcamp-button-bc-circle-black.svg.png" ></img>
+                    </a>
+                </div>
                 <Gallery images={IMAGES} />
-                <MyYouTube />
-
             </div>
         )
     }

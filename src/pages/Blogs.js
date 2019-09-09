@@ -13,6 +13,7 @@ export default class Blogs extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
+                <img style={{ width: '280px' }} src="https://pics.me.me/wow-such-empty-18405293.png" ></img>
             </div>
         )
     }
