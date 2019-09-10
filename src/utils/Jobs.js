@@ -33,7 +33,7 @@ const Jobs = [
         img: 'https://www.whirple.com/wp-content/uploads/2017/11/Whirple-LogoText.png',
         details1: 'Developed user features (i.e. subscription model in a enterprise web application) using modern Microsoft Stack C# .net framework',
         details2: 'Written SQL migration scripts helping the company scale and migrate to cloud.',
-        details3: 'Improved user experience in the main web application by developing responsive designs with CSS.',
+        details3: "They Didn't Pay me :c",
         techStack: [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_F7E82447ZvIATPngUDL39DFIV_UlVd3gqGKCWJ-OM_wozvjMWw',
             'https://cdn.imgbin.com/12/18/12/imgbin-microsoft-sql-server-mysql-database-logo-others-sql-logo-enGPPCqdF4YASJB8TCdjq4PY2.jpg'

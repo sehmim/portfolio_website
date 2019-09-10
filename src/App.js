@@ -8,6 +8,7 @@ import AllJobs from "./pages/AllJobs";
 import Experience from "./pages/Experience";
 import Blogs from './pages/Blogs';
 import Band from './pages/Band';
+import LandingPageOld from "./pages/LandingPageOld";
 function RouteController() {
   return (
     <Router>
@@ -24,7 +25,8 @@ function RouteController() {
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <LandingPageOld />
+      {/* <LandingPage /> */}
       <Experience />
       <Projects />
       <Blogs></Blogs>
