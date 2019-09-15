@@ -4,4 +4,8 @@ This is my personal website where I post all of my projects and collaborations a
 
 ### Demo
 
+http://haque-sehmim.surge.sh/
+
 ### Tech Stack
+
+- React
